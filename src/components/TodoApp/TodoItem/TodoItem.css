@@ -6,31 +6,36 @@
   margin-top: 0.5rem;
   align-items: start;
   background-color: var(--cl-light);
-
+  word-wrap: break-word;
+  word-break: break-all;
   border-bottom-right-radius: 2em;
   box-shadow: 0 2px 6px #333;
   padding: 2rem;
   padding-right: 0.6rem;
   position: relative;
 }
+* {
+  word-wrap: break-word;
+  word-break: break-all;
+}
 .ItemContainer::after {
   content: "";
   position: absolute;
-  width: 20px;
-  height: 20px;
+  width: 13px;
+  height: 13px;
   background-color: var(--cl-sc);
   box-shadow: 0 0 3px var(--cl-black);
-  bottom: 1.5rem;
-  right: 1.5rem;
+  bottom: 1rem;
+  right: 2rem;
   border-radius: 50%;
 }
 .Number {
   color: rgb(19, 12, 15);
   position: absolute;
-  font-size: 3rem;
-  bottom: 1rem;
+  font-size: 2rem;
+  bottom: 0.2rem;
   color: var(--cl-black);
-  right: 3.2rem;
+  right: 3rem;
 }
 .icon i {
   font-size: 1.3rem;

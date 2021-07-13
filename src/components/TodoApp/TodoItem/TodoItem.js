@@ -1,26 +1,35 @@
 import "./TodoItem.css";
+import { useContext } from "react";
+import DispatchTodoContext from "../Hooks/context/DispatchTodoContext";
 
-const TodoItem = () => {
+const TodoItem = props => {
+  const disptach = useContext(DispatchTodoContext);
+  const { todo, id, index } = props;
+
   return (
     <div className="ItemContainer">
       <div className="info">
-        <h3>
-          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Pariatur
-          eaque amet, sit molestias illo fugiat quaerat voluptatum maiores
-          architecto iste sint. Laborum, sed nisi necessitatibus rem adipisci
-          odio animi recusandae?
-        </h3>
+        <h3>{todo}</h3>
       </div>
       <div className="controls">
-
-        <button className="icon btn edit item">
-          <i class="fas fa-pencil-alt"></i>
+        <button
+          className="icon btn edit item"
+          onClick={() => {
+            disptach({ type: "EDIT", id });
+          }}
+        >
+          <i className="fas fa-pencil-alt"></i>
         </button>
-        <button className="icon btn delete item">
-          <i class="fas fa-trash-alt"></i>
+        <button
+          className="icon btn delete item"
+          onClick={() => {
+            disptach({ type: "DELETE_ONE", id });
+          }}
+        >
+          <i className="fas fa-trash-alt"></i>
         </button>
       </div>
-      <span className="Number">1</span>
+      <span className="Number">{index}</span>
     </div>
   );
 };
