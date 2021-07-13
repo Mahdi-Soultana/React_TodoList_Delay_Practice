@@ -15,7 +15,7 @@ const Layout = props => {
             <a href="https://twitter.com/mahdi_soultana">Twitter</a>
           </li>
           <li>
-            <a href="https://www.linkedin.com/in/mahdisoultana/">linkdin</a>
+            <a href="https://www.linkedin.com/in/mahdisoultana/">Linkdin</a>
           </li>
           <li>
             <a href="https://github.com/Mahdi-Soultana">github</a>
