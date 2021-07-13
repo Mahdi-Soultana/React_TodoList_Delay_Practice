@@ -29,7 +29,7 @@ const TodoItem = props => {
           <i className="fas fa-trash-alt"></i>
         </button>
       </div>
-      <span className="Number">{index}</span>
+      <span className="Number">{index + 1}</span>
     </div>
   );
 };

@@ -12,13 +12,13 @@ const Layout = props => {
         </div>
         <ul>
           <li>
-            <a href="">Twitter</a>
+            <a href="https://twitter.com/mahdi_soultana">Twitter</a>
           </li>
           <li>
-            <a href="">linkdin</a>
+            <a href="https://www.linkedin.com/in/mahdisoultana/">linkdin</a>
           </li>
           <li>
-            <a href="">github</a>
+            <a href="https://github.com/Mahdi-Soultana">github</a>
           </li>
         </ul>
       </footer>

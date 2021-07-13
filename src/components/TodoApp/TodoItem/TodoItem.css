@@ -25,17 +25,17 @@
   height: 13px;
   background-color: var(--cl-sc);
   box-shadow: 0 0 3px var(--cl-black);
-  bottom: 1rem;
-  right: 2rem;
+  top: 0.6rem;
+  left: 1rem;
   border-radius: 50%;
 }
 .Number {
   color: rgb(19, 12, 15);
   position: absolute;
-  font-size: 2rem;
-  bottom: 0.2rem;
+  font-size: 1.3rem;
+  top: 0.2rem;
   color: var(--cl-black);
-  right: 3rem;
+  left: 2.3rem;
 }
 .icon i {
   font-size: 1.3rem;
